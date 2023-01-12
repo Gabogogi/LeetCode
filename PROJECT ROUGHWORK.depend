@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1673509820 source:d:\alx\c marathon\project roughwork\main.c
+	<stdio.h>
+	<stdlib.h>
+
