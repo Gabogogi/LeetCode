@@ -11,7 +11,7 @@ def isPalindrome(self, x):
         """
         #return(str(x) == str(x)[::-1]) #reverses string and checks if its same
 
-        # Don't convert to string
+        # Don't convert to string: ALTERNATIVE 1
         if x < 0:
             return False
 
@@ -23,3 +23,20 @@ def isPalindrome(self, x):
             digit += 1
 
         return(x == rev_num)
+        # Don't convert to string: ALTERNATIVE 2
+
+        if x < 0:
+            return False
+
+        if x == 0:
+            return True
+        if x % 10 == 0:
+             return False
+        originalX = x
+        numReversed = 0
+        while(x > 0):
+            lastDigit = x % 10
+            numReversed = numReversed * 10 + lastDigit
+            x = x // 10
+
+        return numReversed == originalX
