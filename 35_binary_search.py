@@ -10,7 +10,7 @@ def searchInsert(self, nums, target):
     :type target: int
     :rtype: int
     """
-    l, r = 0, len(nums) - 1
+    l, r = 0, len(nums) - 1 # two pointers , one at start the other at end
 
     while l <= r:
         mid = (l + r) // 2
